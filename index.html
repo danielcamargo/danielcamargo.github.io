@@ -27,9 +27,34 @@
             </div>
         </div>
         <div class="bg-blue-200 max-w-md">
-            <img src="/assets/avatar.png" alt="Daniel Camargo Avatar">
+            <img id="avatar" src="/assets/avatar.png" alt="Daniel Camargo Avatar">
         </div>
+        <button class="button" onclick="stop()">Stop</button>
     </div>
+    <script>
+        // Images from here:
+        // https://www.uifaces.co/browse-avatars/
+        const images = [
+            "https://randomuser.me/api/portraits/men/32.jpg",
+            "https://randomuser.me/api/portraits/men/46.jpg",
+            "https://randomuser.me/api/portraits/men/86.jpg",
+        ]
+
+        const avatar = document.getElementById("avatar")
+        let currentAvatarIndex = 0
+        function changeAvatarEvery3Secs() {
+            avatar.setAttribute("src", images[currentAvatarIndex])
+            currentAvatarIndex = currentAvatarIndex + 1
+            if (currentAvatarIndex > images.length - 1) {
+                currentAvatarIndex = 0
+            }
+        }
+        const interval = setInterval(changeAvatarEvery3Secs, 3000);
+
+        function stop() {
+            clearInterval(interval)
+        }
+    </script>
 </body>
 
 </html>
