@@ -15,45 +15,57 @@
 </head>
 
 <body>
-    <div class="p-12 lg:space-x-6 flex flex-col flex-col-reverse lg:flex-row items-center justify-center">
-        <div class="flex flex-col mt-6 lg:mt-0">
-            <h1 class="text-3xl text-center lg:text-left">Hi, Daniel Camargo</h1>
-            <p class="mt-4 text-lg lg:text-xl max-w-md">
-                I'm a software developer and here is my portfolio website.
-                Here you'll learn about my journey as a software developer.
-            </p>
-            <div class="flex justify-center lg:justify-start">
-                <button class="button">Hire Me</button>
-            </div>
-        </div>
-        <div class="bg-blue-200 max-w-md">
-            <img id="avatar" src="/assets/avatar.png" alt="Daniel Camargo Avatar">
-        </div>
-        <button class="button" onclick="stop()">Stop</button>
+    <div class="p-12">
+        <div id="outcome"></div>
     </div>
     <script>
-        // Images from here:
-        // https://www.uifaces.co/browse-avatars/
-        const images = [
-            "https://randomuser.me/api/portraits/men/32.jpg",
-            "https://randomuser.me/api/portraits/men/46.jpg",
-            "https://randomuser.me/api/portraits/men/86.jpg",
-        ]
+        const input = [5, 3, 2, 1, 8, 12, 11, 4]
+        const output = [1, 2, 3, 4, 5, 8, 11, 12]
+        const outcome = document.getElementById("outcome")
+        function sort(collection) {
+            appendLine(JSON.stringify(input));
+            // sort the collection
 
-        const avatar = document.getElementById("avatar")
-        let currentAvatarIndex = 0
-        function changeAvatarEvery3Secs() {
-            avatar.setAttribute("src", images[currentAvatarIndex])
-            currentAvatarIndex = currentAvatarIndex + 1
-            if (currentAvatarIndex > images.length - 1) {
-                currentAvatarIndex = 0
+            for (let i = 0; i < collection.length; i++) {
+                appendLine('i=' + i)
+                let swapped = false;
+                let highestPastValue = null
+                for (let j = 0; j < collection.length - 1; j++) {
+                    if (highestPastValue === null) {
+                        highestPastValue = collection[j]
+                    }
+                    if (collection[j] > highestPastValue) {
+                        highestPastValue = collection[j]
+                    }
+
+                    const k = collection[j] + ">" + collection[j + 1] + "?: "
+                    if (collection[j] > collection[j + 1]) {
+                        swap(collection, j, j + 1);
+                        swapped = true;
+                    }
+                    const str2 = "(" + j + "," + (j + 1) + ") " + k + JSON.stringify(collection);
+                    appendLine(str2);
+                }
+                if (!swapped) {
+                    break;
+                }
+
             }
-        }
-        const interval = setInterval(changeAvatarEvery3Secs, 3000);
 
-        function stop() {
-            clearInterval(interval)
         }
+        function appendLine(str) {
+            const line = document.createElement("pre");
+            line.innerText = str;
+            outcome.appendChild(line);
+        }
+
+        function swap(collection, indexA, indexB) {
+            const i = collection[indexA];
+            collection[indexA] = collection[indexB];
+            collection[indexB] = i;
+        }
+
+        sort(input);
     </script>
 </body>
 
