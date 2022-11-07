@@ -1,0 +1,25 @@
+{
+  "name": "danielcamargo.github.io",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "scripts": {
+    "watch": "npx tailwindcss -i ./main.css -o ./dist/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielcamargo/danielcamargo.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielcamargo/danielcamargo.github.io/issues"
+  },
+  "homepage": "https://github.com/danielcamargo/danielcamargo.github.io#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.2",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.7"
+  }
+}
