@@ -2,26 +2,56 @@
 <html lang="eng">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/dist/output.css"/>
-  <title>Daniel Teleginski Camargo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Teleginski Camargo</title>
 </head>
 
 <body>
-<div class="p-12">
-  <input id="email" type="text" class="bg-amber-50"
-         onblur="validateEmail(this)"/>
-  <input id="ssn" type="text"/>
-</div>
+    <div class="phone-list">
+        <div class="phone">
+            <label for="phone-0">Phone 1</label>
+            <input id="phone-0" type="tel" />
+        </div>
+    </div>
+    <br />
+    <button onclick="addPhone()">Add phone</button>
+
+    <button onclick="removeLastPhone()" id="remove">Remove last phone</button>
 </body>
 
 <script>
-    const validateEmail = function (el) {
-        console.log("Value: ", el.value)
-        // It needs to have the @ symbol
-        // It needs to have the . after the @ symbol
-        // The . cannot be the very last character
+    function addPhone() {
+        const phoneList = document.querySelector(".phone-list")
+        const existing = phoneList.querySelectorAll(".phone")
+        const nextPhone = document.createElement("div")
+        nextPhone.classList.add("phone")
+        // Create label
+        const nextPhoneLabel = document.createElement("label")
+        nextPhoneLabel.innerText = "Phone " + (existing.length + 1)
+        nextPhoneLabel.setAttribute("for", `phone-${existing.length}`)
+        nextPhone.append(nextPhoneLabel)
+        // Create input
+        const nextPhoneInput = document.createElement("input")
+        nextPhoneInput.setAttribute("id", `phone-${existing.length}`)
+        nextPhoneInput.setAttribute("type", "tel")
+        nextPhone.append(nextPhoneInput)
+        // Append to phoneList
+        phoneList.append(nextPhone)
+
+        const removeButton = document.getElementById("remove")
+        removeButton.removeAttribute("disabled")
+    }
+    function removeLastPhone() {
+        const phoneList = document.querySelector(".phone-list")
+        const phones = phoneList.querySelectorAll(".phone")
+        const size = phones.length
+        phones[phones.length - 1].remove()
+        if (size === 1) {
+            const removeButton = document.getElementById("remove")
+            removeButton.setAttribute("disabled", 'true')
+
+        }
     }
 </script>
 
