@@ -7,21 +7,38 @@
     <link href="dist/output.css" rel="stylesheet">
     <title>Daniel Teleginski Camargo</title>
     <script src="/scripts/masks.js" defer></script>
+    <script src="/scripts/files.js" defer></script>
 </head>
 
 <body class="p-12">
-    <input type="text" oninput="phoneNumber(this)" />
-    <button
-        class="inline-flex items-center justify-center rounded-md border font-medium shadow-bottom-sm focus:outline-none focus:ring-2 focus:ring-offset-2 border-transparent bg-red-600 text-white hover:bg-red-500 focus:bg-red-600 active:bg-red-700 px-4 py-2 text-base leading-base disabled:opacity-50"
-        onclick="sendEmail(this)">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="icon w-3 h-3 animate-spin mr-2 hidden">
-            <path stroke-linecap="round" stroke-linejoin="round"
-                d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-        </svg>
-        <span class="send">Send</span>
-        <span class="sending hidden">Sending...</span>
-    </button>
+    <label
+        class="inline-flex items-center justify-center rounded-md border font-medium shadow-bottom-sm focus:outline-none focus:ring-2 focus:ring-offset-2 border-transparent bg-red-600 text-white hover:bg-red-500 focus:bg-red-600 active:bg-red-700 px-4 py-2 text-base leading-base disabled:opacity-50 cursor-pointer">
+        Choose 1 file
+        <input type="file" class="hidden" onchange="onFileChange(this)" webkitdirectory mozdirectory accept="image/*" />
+    </label>
+
+    <label
+        class="inline-flex items-center justify-center rounded-md border font-medium shadow-bottom-sm focus:outline-none focus:ring-2 focus:ring-offset-2 border-transparent bg-red-600 text-white hover:bg-red-500 focus:bg-red-600 active:bg-red-700 px-4 py-2 text-base leading-base disabled:opacity-50 cursor-pointer">
+        Choose many files
+        <input type="file" class="hidden" multiple="true" onchange="onFileChange(this)" accept="image/*" />
+    </label>
+
+    <label
+        class="inline-flex items-center justify-center rounded-md border font-medium shadow-bottom-sm focus:outline-none focus:ring-2 focus:ring-offset-2 border-transparent bg-red-600 text-white hover:bg-red-500 focus:bg-red-600 active:bg-red-700 px-4 py-2 text-base leading-base disabled:opacity-50 cursor-pointer">
+        Choose a folder
+        <input type="file" class="hidden" onchange="onFileChange(this)" webkitdirectory mozdirectory accept="image/*" />
+    </label>
+
+    <div id="drop_zone" tabindex="-1"
+        class="my-12 p-6 flex items-center justify-center border-2 border-dashed border-gray-300 h-20 w-full focus:border-green-300"
+        ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
+        <p>Drag one or more files to this <i>drop zone</i>.</p>
+    </div>
+
+    <div>
+        <h2>Selected Files</h2>
+        <div id="selectedFilesContainer" class="p-6 flex flex-col"></div>
+    </div>
 </body>
 
 </html>
