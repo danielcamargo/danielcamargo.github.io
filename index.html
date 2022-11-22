@@ -9,36 +9,24 @@
     <script src="/scripts/actions.js" defer></script>
     <script src="/scripts/files.js" defer></script>
     <script src="/scripts/masks.js" defer></script>
+    <script src="/scripts/wakatime.js" defer></script>
 </head>
 
 <body class="p-12">
-    <label
-        class="inline-flex items-center justify-center rounded-md border font-medium shadow-bottom-sm focus:outline-none focus:ring-2 focus:ring-offset-2 border-transparent bg-red-600 text-white hover:bg-red-500 focus:bg-red-600 active:bg-red-700 px-4 py-2 text-base leading-base disabled:opacity-50 cursor-pointer">
-        Choose 1 file
-        <input type="file" class="hidden" onchange="onFileChange(this)" webkitdirectory mozdirectory accept="image/*" />
-    </label>
-
-    <label
-        class="inline-flex items-center justify-center rounded-md border font-medium shadow-bottom-sm focus:outline-none focus:ring-2 focus:ring-offset-2 border-transparent bg-red-600 text-white hover:bg-red-500 focus:bg-red-600 active:bg-red-700 px-4 py-2 text-base leading-base disabled:opacity-50 cursor-pointer">
-        Choose many files
-        <input type="file" class="hidden" multiple="true" onchange="onFileChange(this)" accept="image/*" />
-    </label>
-
-    <label
-        class="inline-flex items-center justify-center rounded-md border font-medium shadow-bottom-sm focus:outline-none focus:ring-2 focus:ring-offset-2 border-transparent bg-red-600 text-white hover:bg-red-500 focus:bg-red-600 active:bg-red-700 px-4 py-2 text-base leading-base disabled:opacity-50 cursor-pointer">
-        Choose a folder
-        <input type="file" class="hidden" onchange="onFileChange(this)" webkitdirectory mozdirectory accept="image/*" />
-    </label>
-
-    <div id="drop_zone" tabindex="-1"
-        class="my-12 p-6 flex items-center justify-center border-2 border-dashed border-gray-300 h-20 w-full focus:border-green-300"
-        ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
-        <p>Drag one or more files to this <i>drop zone</i>.</p>
-    </div>
-
     <div>
-        <h2>Selected Files</h2>
-        <div id="selectedFilesContainer" class="p-6 flex flex-col"></div>
+        HTML
+        <br />
+        <span id="htmlHours"></span>
+    </div>
+    <div>
+        CSS
+        <br />
+        <span id="cssHours"></span>
+    </div>
+    <div>
+        JavaScript
+        <br />
+        <span id="javaScriptHours"></span>
     </div>
 </body>
 

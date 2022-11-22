@@ -1,0 +1,599 @@
+{
+    "data": {
+        "categories": [
+            {
+                "decimal": "1340.80",
+                "digital": "1340:48",
+                "hours": 1340,
+                "minutes": 48,
+                "name": "Coding",
+                "percent": 100.0,
+                "text": "1,340 hrs 48 mins",
+                "total_seconds": 4826911.013732
+            }
+        ],
+        "daily_average": 12655.0,
+        "daily_average_including_other_language": 13261.0,
+        "days_including_holidays": 1741,
+        "days_minus_holidays": 364,
+        "editors": [
+            {
+                "decimal": "861.48",
+                "digital": "861:29",
+                "hours": 861,
+                "minutes": 29,
+                "name": "PhpStorm",
+                "percent": 64.25,
+                "text": "861 hrs 29 mins",
+                "total_seconds": 3101381.683937965
+            },
+            {
+                "decimal": "264.10",
+                "digital": "264:06",
+                "hours": 264,
+                "minutes": 6,
+                "name": "WebStorm",
+                "percent": 19.7,
+                "text": "264 hrs 6 mins",
+                "total_seconds": 950763.3539998531
+            },
+            {
+                "decimal": "154.20",
+                "digital": "154:12",
+                "hours": 154,
+                "minutes": 12,
+                "name": "VS Code",
+                "percent": 11.5,
+                "text": "154 hrs 12 mins",
+                "total_seconds": 555147.296615
+            },
+            {
+                "decimal": "61.00",
+                "digital": "61:00",
+                "hours": 61,
+                "minutes": 0,
+                "name": "IntelliJ",
+                "percent": 4.55,
+                "text": "61 hrs",
+                "total_seconds": 219618.679179
+            }
+        ],
+        "holidays": 1377,
+        "human_readable_daily_average": "3 hrs 30 mins",
+        "human_readable_daily_average_including_other_language": "3 hrs 41 mins",
+        "human_readable_range": "since Feb 14 2018",
+        "human_readable_total": "1,279 hrs 32 mins",
+        "human_readable_total_including_other_language": "1,340 hrs 48 mins",
+        "id": "d7c29e07-4856-49ad-a889-5d740f5aa61c",
+        "is_already_updating": false,
+        "is_coding_activity_visible": true,
+        "is_including_today": false,
+        "is_other_usage_visible": true,
+        "is_stuck": false,
+        "is_up_to_date": true,
+        "is_up_to_date_pending_future": false,
+        "languages": [
+            {
+                "decimal": "533.68",
+                "digital": "533:41",
+                "hours": 533,
+                "minutes": 41,
+                "name": "PHP",
+                "percent": 39.8,
+                "text": "533 hrs 41 mins",
+                "total_seconds": 1921288.418139
+            },
+            {
+                "decimal": "162.40",
+                "digital": "162:24",
+                "hours": 162,
+                "minutes": 24,
+                "name": "JavaScript",
+                "percent": 12.11,
+                "text": "162 hrs 24 mins",
+                "total_seconds": 584668.114523
+            },
+            {
+                "decimal": "131.60",
+                "digital": "131:36",
+                "hours": 131,
+                "minutes": 36,
+                "name": "Vue.js",
+                "percent": 9.82,
+                "text": "131 hrs 36 mins",
+                "total_seconds": 473769.466286
+            },
+            {
+                "decimal": "122.15",
+                "digital": "122:09",
+                "hours": 122,
+                "minutes": 9,
+                "name": "Blade Template",
+                "percent": 9.11,
+                "text": "122 hrs 9 mins",
+                "total_seconds": 439771.265245
+            },
+            {
+                "decimal": "66.70",
+                "digital": "66:42",
+                "hours": 66,
+                "minutes": 42,
+                "name": "TypeScript",
+                "percent": 4.97,
+                "text": "66 hrs 42 mins",
+                "total_seconds": 240133.90856
+            },
+            {
+                "decimal": "61.25",
+                "digital": "61:15",
+                "hours": 61,
+                "minutes": 15,
+                "name": "Other",
+                "percent": 4.57,
+                "text": "61 hrs 15 mins",
+                "total_seconds": 220548.630358
+            },
+            {
+                "decimal": "53.82",
+                "digital": "53:49",
+                "hours": 53,
+                "minutes": 49,
+                "name": "Kotlin",
+                "percent": 4.01,
+                "text": "53 hrs 49 mins",
+                "total_seconds": 193769.735638
+            },
+            {
+                "decimal": "38.20",
+                "digital": "38:12",
+                "hours": 38,
+                "minutes": 12,
+                "name": "JSON",
+                "percent": 2.85,
+                "text": "38 hrs 12 mins",
+                "total_seconds": 137559.642094
+            },
+            {
+                "decimal": "32.03",
+                "digital": "32:02",
+                "hours": 32,
+                "minutes": 2,
+                "name": "SQL",
+                "percent": 2.39,
+                "text": "32 hrs 2 mins",
+                "total_seconds": 115367.95874
+            },
+            {
+                "decimal": "27.90",
+                "digital": "27:54",
+                "hours": 27,
+                "minutes": 54,
+                "name": "Markdown",
+                "percent": 2.08,
+                "text": "27 hrs 54 mins",
+                "total_seconds": 100455.201962
+            },
+            {
+                "decimal": "25.63",
+                "digital": "25:38",
+                "hours": 25,
+                "minutes": 38,
+                "name": "HTML",
+                "percent": 1.91,
+                "text": "25 hrs 38 mins",
+                "total_seconds": 92295.039847
+            },
+            {
+                "decimal": "25.38",
+                "digital": "25:23",
+                "hours": 25,
+                "minutes": 23,
+                "name": "YAML",
+                "percent": 1.89,
+                "text": "25 hrs 23 mins",
+                "total_seconds": 91433.939175
+            },
+            {
+                "decimal": "9.03",
+                "digital": "9:02",
+                "hours": 9,
+                "minutes": 2,
+                "name": "Bash",
+                "percent": 0.67,
+                "text": "9 hrs 2 mins",
+                "total_seconds": 32567.538047
+            },
+            {
+                "decimal": "8.47",
+                "digital": "8:28",
+                "hours": 8,
+                "minutes": 28,
+                "name": "Svelte",
+                "percent": 0.63,
+                "text": "8 hrs 28 mins",
+                "total_seconds": 30511.676133
+            },
+            {
+                "decimal": "7.88",
+                "digital": "7:53",
+                "hours": 7,
+                "minutes": 53,
+                "name": "XML",
+                "percent": 0.59,
+                "text": "7 hrs 53 mins",
+                "total_seconds": 28401.403995
+            },
+            {
+                "decimal": "7.23",
+                "digital": "7:14",
+                "hours": 7,
+                "minutes": 14,
+                "name": "Docker",
+                "percent": 0.54,
+                "text": "7 hrs 14 mins",
+                "total_seconds": 26048.46216
+            },
+            {
+                "decimal": "5.93",
+                "digital": "5:56",
+                "hours": 5,
+                "minutes": 56,
+                "name": "Git Config",
+                "percent": 0.44,
+                "text": "5 hrs 56 mins",
+                "total_seconds": 21367.075133
+            },
+            {
+                "decimal": "5.57",
+                "digital": "5:34",
+                "hours": 5,
+                "minutes": 34,
+                "name": "CSS",
+                "percent": 0.42,
+                "text": "5 hrs 34 mins",
+                "total_seconds": 20091.228161
+            },
+            {
+                "decimal": "3.05",
+                "digital": "3:03",
+                "hours": 3,
+                "minutes": 3,
+                "name": "C#",
+                "percent": 0.23,
+                "text": "3 hrs 3 mins",
+                "total_seconds": 11011.545359
+            },
+            {
+                "decimal": "2.97",
+                "digital": "2:58",
+                "hours": 2,
+                "minutes": 58,
+                "name": "Text",
+                "percent": 0.22,
+                "text": "2 hrs 58 mins",
+                "total_seconds": 10681.398286
+            },
+            {
+                "decimal": "2.95",
+                "digital": "2:57",
+                "hours": 2,
+                "minutes": 57,
+                "name": "INI",
+                "percent": 0.22,
+                "text": "2 hrs 57 mins",
+                "total_seconds": 10678.306505
+            },
+            {
+                "decimal": "1.65",
+                "digital": "1:39",
+                "hours": 1,
+                "minutes": 39,
+                "name": "SCSS",
+                "percent": 0.12,
+                "text": "1 hr 39 mins",
+                "total_seconds": 5954.072336
+            },
+            {
+                "decimal": "0.77",
+                "digital": "0:46",
+                "hours": 0,
+                "minutes": 46,
+                "name": "CSV",
+                "percent": 0.06,
+                "text": "46 mins",
+                "total_seconds": 2778.051
+            },
+            {
+                "decimal": "0.67",
+                "digital": "0:40",
+                "hours": 0,
+                "minutes": 40,
+                "name": "CSHTML",
+                "percent": 0.05,
+                "text": "40 mins",
+                "total_seconds": 2447.943496
+            },
+            {
+                "decimal": "0.48",
+                "digital": "0:29",
+                "hours": 0,
+                "minutes": 29,
+                "name": "Shell Script",
+                "percent": 0.04,
+                "text": "29 mins",
+                "total_seconds": 1790.722
+            },
+            {
+                "decimal": "0.47",
+                "digital": "0:28",
+                "hours": 0,
+                "minutes": 28,
+                "name": "Fish",
+                "percent": 0.04,
+                "text": "28 mins",
+                "total_seconds": 1695.629
+            },
+            {
+                "decimal": "0.42",
+                "digital": "0:25",
+                "hours": 0,
+                "minutes": 25,
+                "name": "Java",
+                "percent": 0.03,
+                "text": "25 mins",
+                "total_seconds": 1502.1951
+            },
+            {
+                "decimal": "0.40",
+                "digital": "0:24",
+                "hours": 0,
+                "minutes": 24,
+                "name": "Apache Config",
+                "percent": 0.03,
+                "text": "24 mins",
+                "total_seconds": 1481.815
+            },
+            {
+                "decimal": "0.32",
+                "digital": "0:19",
+                "hours": 0,
+                "minutes": 19,
+                "name": "Stylus",
+                "percent": 0.02,
+                "text": "19 mins",
+                "total_seconds": 1164.332
+            },
+            {
+                "decimal": "0.28",
+                "digital": "0:17",
+                "hours": 0,
+                "minutes": 17,
+                "name": "Git",
+                "percent": 0.02,
+                "text": "17 mins",
+                "total_seconds": 1043.777295
+            },
+            {
+                "decimal": "0.17",
+                "digital": "0:10",
+                "hours": 0,
+                "minutes": 10,
+                "name": "GitIgnore file",
+                "percent": 0.01,
+                "text": "10 mins",
+                "total_seconds": 626.016
+            },
+            {
+                "decimal": "0.17",
+                "digital": "0:10",
+                "hours": 0,
+                "minutes": 10,
+                "name": "Charmci",
+                "percent": 0.01,
+                "text": "10 mins",
+                "total_seconds": 622.481586
+            },
+            {
+                "decimal": "0.15",
+                "digital": "0:09",
+                "hours": 0,
+                "minutes": 9,
+                "name": "IDEA_MODULE",
+                "percent": 0.01,
+                "text": "9 mins",
+                "total_seconds": 599.164936
+            },
+            {
+                "decimal": "0.15",
+                "digital": "0:09",
+                "hours": 0,
+                "minutes": 9,
+                "name": "Nginx configuration file",
+                "percent": 0.01,
+                "text": "9 mins",
+                "total_seconds": 579.357548
+            },
+            {
+                "decimal": "0.15",
+                "digital": "0:09",
+                "hours": 0,
+                "minutes": 9,
+                "name": "Python",
+                "percent": 0.01,
+                "text": "9 mins",
+                "total_seconds": 561.195261
+            },
+            {
+                "decimal": "0.12",
+                "digital": "0:07",
+                "hours": 0,
+                "minutes": 7,
+                "name": "Transact-SQL",
+                "percent": 0.01,
+                "text": "7 mins",
+                "total_seconds": 459.292
+            },
+            {
+                "decimal": "0.07",
+                "digital": "0:04",
+                "hours": 0,
+                "minutes": 4,
+                "name": "Ruby",
+                "percent": 0.01,
+                "text": "4 mins",
+                "total_seconds": 258.518446
+            },
+            {
+                "decimal": "0.07",
+                "digital": "0:04",
+                "hours": 0,
+                "minutes": 4,
+                "name": "MDX",
+                "percent": 0.01,
+                "text": "4 mins",
+                "total_seconds": 247.698366
+            },
+            {
+                "decimal": "0.05",
+                "digital": "0:03",
+                "hours": 0,
+                "minutes": 3,
+                "name": "Terraform",
+                "percent": 0.0,
+                "text": "3 mins",
+                "total_seconds": 212.239224
+            },
+            {
+                "decimal": "0.03",
+                "digital": "0:02",
+                "hours": 0,
+                "minutes": 2,
+                "name": "EJS",
+                "percent": 0.0,
+                "text": "2 mins",
+                "total_seconds": 176.915
+            },
+            {
+                "decimal": "0.03",
+                "digital": "0:02",
+                "hours": 0,
+                "minutes": 2,
+                "name": "Properties",
+                "percent": 0.0,
+                "text": "2 mins",
+                "total_seconds": 154.087243
+            },
+            {
+                "decimal": "0.02",
+                "digital": "0:01",
+                "hours": 0,
+                "minutes": 1,
+                "name": "spring.factories",
+                "percent": 0.0,
+                "text": "1 min",
+                "total_seconds": 90.615
+            },
+            {
+                "decimal": "0.00",
+                "digital": "0:00",
+                "hours": 0,
+                "minutes": 0,
+                "name": "systemd",
+                "percent": 0.0,
+                "text": "0 secs",
+                "total_seconds": 16.966646
+            },
+            {
+                "decimal": "0.00",
+                "digital": "0:00",
+                "hours": 0,
+                "minutes": 0,
+                "name": "EditorConfig",
+                "percent": 0.0,
+                "text": "0 secs",
+                "total_seconds": 10.137
+            },
+            {
+                "decimal": "0.00",
+                "digital": "0:00",
+                "hours": 0,
+                "minutes": 0,
+                "name": "TOML",
+                "percent": 0.0,
+                "text": "0 secs",
+                "total_seconds": 6.376706
+            },
+            {
+                "decimal": "0.00",
+                "digital": "0:00",
+                "hours": 0,
+                "minutes": 0,
+                "name": "ASP.NET",
+                "percent": 0.0,
+                "text": "0 secs",
+                "total_seconds": 5.930333
+            },
+            {
+                "decimal": "0.00",
+                "digital": "0:00",
+                "hours": 0,
+                "minutes": 0,
+                "name": "Groovy",
+                "percent": 0.0,
+                "text": "0 secs",
+                "total_seconds": 3.28358
+            },
+            {
+                "decimal": "0.00",
+                "digital": "0:00",
+                "hours": 0,
+                "minutes": 0,
+                "name": "VB.NET",
+                "percent": 0.0,
+                "text": "0 secs",
+                "total_seconds": 1.842284
+            },
+            {
+                "decimal": "0.00",
+                "digital": "0:00",
+                "hours": 0,
+                "minutes": 0,
+                "name": "Dockerfile",
+                "percent": 0.0,
+                "text": "0 secs",
+                "total_seconds": 0.224
+            },
+            {
+                "decimal": "0.00",
+                "digital": "0:00",
+                "hours": 0,
+                "minutes": 0,
+                "name": "textmate",
+                "percent": 0.0,
+                "text": "0 secs",
+                "total_seconds": 0.181
+            }
+        ],
+        "operating_systems": [
+            {
+                "decimal": "1340.80",
+                "digital": "1340:48",
+                "hours": 1340,
+                "minutes": 48,
+                "name": "Mac",
+                "percent": 100.0,
+                "text": "1,340 hrs 48 mins",
+                "total_seconds": 4826911.013731819
+            }
+        ],
+        "percent_calculated": 100,
+        "range": "all_time",
+        "status": "ok",
+        "timeout": 15,
+        "total_seconds": 4606362.383374,
+        "total_seconds_including_other_language": 4826911.013732,
+        "user_id": "96272408-1cd1-4b60-a06c-9547e00e6323",
+        "username": "danielcamargo",
+        "writes_only": false
+    }
+}
