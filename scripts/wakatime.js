@@ -1,5 +1,5 @@
 async function fetchMyStats(){
-    const response = await fetch('http://localhost:5500/sample.json', {
+    const response = await fetch('https://nextjs-red-six-46.vercel.app/api/wakatime/danielcamargo', {
         method: 'GET',
         headers: {
             Accept: 'application/json',
