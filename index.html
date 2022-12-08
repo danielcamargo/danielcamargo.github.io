@@ -4,30 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="dist/output.css" rel="stylesheet">
     <title>Daniel Teleginski Camargo</title>
-    <script src="/scripts/actions.js" defer></script>
-    <script src="/scripts/files.js" defer></script>
-    <script src="/scripts/masks.js" defer></script>
-    <script src="/scripts/wakatime.js" defer></script>
+    <script src="/scripts/promises.js"></script>
 </head>
 
 <body class="p-12">
-    <div>
-        HTML
-        <br />
-        <span id="htmlHours"></span>
-    </div>
-    <div>
-        CSS
-        <br />
-        <span id="cssHours"></span>
-    </div>
-    <div>
-        JavaScript
-        <br />
-        <span id="javaScriptHours"></span>
-    </div>
+    <button id="save" onclick="handleSave()">Save</button>
+    <p id="outcome"></p>
+    <script>
+        async function handleSave() {
+            document.getElementById("save").innerText = "Saving...";
+            document.getElementById("outcome").innerText = "";
+            try {
+                await new Promise((resolve, reject) => {
+                    setTimeout(() => {
+                        resolve();
+                        //reject(Error("Something went wrong"));
+                    }, 1000);
+                });
+                console.log("Success");
+                document.getElementById("outcome").innerText = "Success";
+            } catch (e) {
+                console.error(e.message);
+                document.getElementById("outcome").innerText = "Error";
+            } finally {
+                console.log("Finally");
+                document.getElementById("save").innerText = "Save";
+            }
+        }
+    </script>
 </body>
 
 </html>
